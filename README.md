@@ -101,7 +101,7 @@ These are potential enhancements, not features currently implemented.
 
 ##  Author
 
-**Adarsh**
+**Adarsha dk**
 
 GitHub: [@hey-its-adu](https://github.com/hey-its-adu)
 
