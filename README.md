@@ -67,65 +67,6 @@ When the program starts, the following menu is displayed:
 
 Select an option by entering its corresponding number.
 
-## 💡 Example
-
-Suppose the following expenses are recorded:
-
-| Expense Name | Category |   Amount |
-| ------------ | -------- | -------: |
-| Lunch        | Food     |     ₹100 |
-| Bus          | Travel   |      ₹40 |
-| Dinner       | Food     |     ₹200 |
-| **Total**    |          | **₹340** |
-
-### Calculate Total Expenses
-
-```text
-Total Expenses: ₹340
-```
-
-### Calculate Expenses by Category
-
-When the user selects `Food`:
-
-```text
-Total Food Expenses: ₹300
-```
-
-This allows the user to see both overall spending and spending within a particular category.
-
-## 💾 How Data Storage Works
-
-The application uses Python's built-in `json` module to store expense records in `expense.txt`.
-
-Each expense is represented as a dictionary containing its name, category, and amount. The dictionaries are stored together in a list.
-
-For example:
-
-```json
-[
-  {
-    "name": "Lunch",
-    "category": "Food",
-    "amount": 100
-  },
-  {
-    "name": "Bus",
-    "category": "Travel",
-    "amount": 40
-  }
-]
-```
-
-The application uses:
-
-* **`json.dump()`** to save the expense list to a file.
-* **`json.load()`** to load previously saved expenses.
-* **File handling** to read and write expense data.
-
-When the program starts, it loads the saved expenses. Adding or deleting an expense updates the stored data, allowing those changes to remain available after the application closes.
-
-**Important:** Keep `expense.txt` in the project folder. If the file contains existing expense records, preserve them when updating or moving the project.
 
 ##  Concepts Practised
 
